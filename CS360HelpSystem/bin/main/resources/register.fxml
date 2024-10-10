@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.java.com.example.cse360.RegisterController">
+    <children>
+        <TextField fx:id="emailField" promptText="Email" layoutX="50" layoutY="50" />
+        <TextField fx:id="usernameField" promptText="Username" layoutX="50" layoutY="90" />
+        <PasswordField fx:id="passwordField" promptText="Password" layoutX="50" layoutY="130" />
+        <TextField fx:id="firstNameField" promptText="First Name" layoutX="50" layoutY="170" />
+        <TextField fx:id="middleNameField" promptText="Middle Name" layoutX="50" layoutY="210" />
+        <TextField fx:id="lastNameField" promptText="Last Name" layoutX="50" layoutY="250" />
+        <TextField fx:id="preferredNameField" promptText="Preferred Name" layoutX="50" layoutY="290" />
+        <Label fx:id="errorLabel" textFill="red" layoutX="50" layoutY="330" />
+        <Button text="Register" onAction="#handleRegistration" layoutX="50" layoutY="370" />
+        <Button text="Go to Login" onAction="#goToLogin" layoutX="150" layoutY="370" /> <!-- New button for navigation -->
+    </children>
+</AnchorPane>

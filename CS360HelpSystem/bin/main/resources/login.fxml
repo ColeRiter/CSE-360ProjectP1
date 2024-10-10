@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.example.cse360.LoginController">
+    <children>
+        <TextField fx:id="usernameField" promptText="Username" layoutX="50" layoutY="50" />
+        <PasswordField fx:id="passwordField" promptText="Password" layoutX="50" layoutY="90" />
+        <Button text="Login" onAction="#handleLogin" layoutX="50" layoutY="130" />
+        <Label fx:id="errorLabel" textFill="red" layoutX="50" layoutY="170" />
+        <Button text="Go to Register" onAction="#goToRegister" layoutX="150" layoutY="130" /> <!-- New button for navigation -->
+    </children>
+</AnchorPane>
